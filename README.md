@@ -5,8 +5,8 @@ GeoRSS version of the AtomFeed from werkzeug.contrib.atom. Only does Recognizes 
 
 Ex.
 
-      feed = GeoAtomFeed(job.name, feed_url=request.url, url=request.url_root )
-    articles = get_data(job_slug, time)
+      feed = GeoAtomFeed(name, feed_url=request.url, url=request.url_root )
+    articles = get_data()
     for article in articles:
         if len(article['coordinate_string']) > 0:
             lat_lon = [str(article['coordinates']['lat']), str(article['coordinates']['lon'])]
