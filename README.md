@@ -4,6 +4,7 @@ geo_atom.py
 GeoRSS version of the AtomFeed from werkzeug.contrib.atom. Only does Recognizes Point. 
 
 Ex.
+
       feed = GeoAtomFeed(job.name, feed_url=request.url, url=request.url_root )
     articles = get_data(job_slug, time)
     for article in articles:
